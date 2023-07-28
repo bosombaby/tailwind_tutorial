@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
 
-    <!-- Percentages -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sizing</title>
+</head>
 
-    <!-- Width of the viewport -->
+<body>
+  <!-- Width -->
+  <div class="text-4xl my-5">Width</div>
+  <div class="bg-black text-white w-16">Width</div>
+  <div class="bg-black text-white w-32">Width</div>
+  <div class="bg-black text-white w-64">Width</div>
+  <div class="bg-black text-white w-96">Width</div>
 
-    <!-- 100% of container -->
+  <!-- Percentages -->
+  <div class="text-4xl my-5">Percentages</div>
+  <div class="bg-cyan-300 w-2/3">Percentages</div>
+  <div class="bg-cyan-300 w-3/4">Percentages</div>
+  <div class="bg-cyan-300 w-4/5">Percentages</div>
+  <div class="bg-cyan-300 w-5/6">Percentages</div>
+  <div class="bg-cyan-300 w-11/12">Percentages</div>
 
-    <!-- min/max content -->
 
-    <!-- Arbitrary width -->
+  <!-- Width of the viewport -->
+  <div class="text-4xl my-5">Width of the viewport</div>
+  <div class="bg-sky-500 w-screen">Width of the viewport</div>
 
-    <!-- Max Width -->
+  <!-- 100% of container -->
+  <div class="text-4xl my-5">100% of container</div>
+  <div class="bg-indigo-300 w-full">100% of container</div>
 
-    <!-- Height (Most of the same options as widths) -->
+  <!-- Arbitrary width -->
+  <div class="text-4xl my-5">Arbitrary width</div>
+  <div class="bg-red-600 w-[300px]">Arbitrary width</div>
 
-    <!-- Min Height -->
+  <!-- Min Width -->
 
-    <!-- Max Height -->
+  <!-- Max Width -->
+  <div class="text-4xl my-5">Max Width</div>
+  <div class="bg-gray-100 max-w-lg mx-auto">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+    perferendis incidunt nihil ullam repellendus praesentium consectetur et
+    sed distinctio, magni iusto quos repellat officiis cum dolore aliquid
+    minus esse pariatur.
+  </div>
+  <!-- Height (Most of the same options as widths) -->
+  <div class="text-4xl my-5">Height (Most of the same options as widths)</div>
+  <div class="flex items-end">
+    <div class="bg-orange-500 w-20 h-24">h-24</div>
+    <div class="bg-orange-500 w-20 h-32">h-32</div>
+    <div class="bg-orange-500 w-20 h-40">h-40</div>
+    <div class="bg-orange-500 w-20 h-48">h-48</div>
+    <div class="bg-orange-500 w-20 h-64">h-64</div>
+    <div class="bg-orange-500 w-20 h-80">h-80</div>
+  </div>
+  <!-- Min Height -->
 
-    <!-- Full screen height -->
-  </body>
+  <!-- Max Height -->
+
+  <!-- Full screen height -->
+  <div class="text-4xl my-5">Full screen height</div>
+  <div class="bg-green-300 h-screen">Full screen height</div>
+</body>
+
 </html>
 
 <!-- 

@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Container & Spacing</title>
-  </head>
-  <body>
-    <!-- Container -->
-    <div>
-      <article>
-        <h3>Article One</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem laboriosam libero molestiae recusandae accusantium
-          voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
-          sunt, maiores quasi. Modi amet quos dolores!
-        </p>
-      </article>
 
-      <!-- Margin -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Container & Spacing</title>
+</head>
 
-      <!-- Padding -->
+<body>
+  <!-- Container -->
+  <div class="container mx-auto">
+    <article>
+      <h3>Article One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Exercitationem laboriosam libero molestiae recusandae accusantium
+        voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
+        sunt, maiores quasi. Modi amet quos dolores!
+      </p>
+    </article>
 
-      <!-- Space Between X -->
-
-      <!-- Space Between Y -->
+    <!-- Margin -->
+    <div class="bg-slate-100 m-2">Hello Tailwind</div>
+    <div class="bg-slate-100 mx-10">Hello Tailwind</div>
+    <div class="bg-slate-100 my-10">Hello Tailwind</div>
+    <div class="bg-slate-100 ml-4">Hello Tailwind</div>
+    <div class="bg-slate-100 mt-4">Hello Tailwind</div>
+    <div class="bg-slate-100 mr-4">Hello Tailwind</div>
+    <div class="bg-slate-100 mb-4">Hello Tailwind</div>
+    <div class="bg-slate-100 mt-[20px]">Hello Tailwind</div>
+    <!-- Padding -->
+    <div class="bg-slate-100 p-2">Hello Tailwind</div>
+    <div class="bg-slate-100 px-10">Hello Tailwind</div>
+    <div class="bg-slate-100 py-10">Hello Tailwind</div>
+    <div class="bg-slate-100 pl-4">Hello Tailwind</div>
+    <div class="bg-slate-100 pt-4">Hello Tailwind</div>
+    <div class="bg-slate-100 pr-4">Hello Tailwind</div>
+    <div class="bg-slate-100 pb-4">Hello Tailwind</div>
+    <div class="bg-slate-100 pt-[20px]">Hello Tailwind</div>
+    <!-- Space Between X -->
+    <div class="flex mt-10 space-x-24">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+      <div>item 5</div>
+      <div>item 6</div>
+      <div>item 7</div>
     </div>
-  </body>
+    <!-- Space Between Y -->
+    <div class="flex flex-col mt-10 space-y-4">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+      <div>item 5</div>
+      <div>item 6</div>
+      <div>item 7</div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- Breakpoinsts for Container 
