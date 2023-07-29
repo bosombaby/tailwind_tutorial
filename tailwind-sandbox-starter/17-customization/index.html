@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Customization</title>
-  </head>
- <body
-    class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
-  >
-   
-      <h1 class="text-white text-xl"></h1>
 
-    <script>
-      function showBrowserWidth() {
-        const width = window.innerWidth
-
-        document.querySelector('h1').innerHTML = `Width: ${width}`
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'sm': '600px',
+          'md': '800px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            'purple': '#3f3cbb',
+            'midnight': '#121063',
+            'metal': '#565584',
+          },
+          spacing: {
+            '6': '2rem',
+          },
+          borderRadius: {
+            '4xl': '2rem',
+          },
+        }
       }
+    }
+  </script>
+  <title>Customization</title>
+</head>
 
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
-    </script>
-  </body>
+<body class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800">
+
+  <div class="border p-6 mx-auto max-w-sm rounded-4xl border-midnight">
+    <h1 class="text-white text-xl sm:text-purple"></h1>
+  </div>
+
+
+  <script>
+    function showBrowserWidth() {
+      const width = window.innerWidth
+
+      document.querySelector('h1').innerHTML = `Width: ${width}`
+    }
+
+    window.onload = showBrowserWidth
+    window.onresize = showBrowserWidth
+  </script>
+</body>
+
 </html>
 
 <!-- Breakpoint Classes

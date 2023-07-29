@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dark Mode</title>
-  </head>
-  <body>
-    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    .toggle-checkbox:checked {
+      right: 0;
+      border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+      background: #68d391;
+    }
+  </style>
+  <title>Dark Mode</title>
+</head>
+
+<body>
+  <div
+    class="container mt-10 mx-auto max-w-xl px-6 py-8 bg-white 
+  text-white dark:bg-slate-900  border-stone-700 rounded-lg hover:shadow-2xl hover:shadow-blue-500 transition-all duration-1000 cursor-pointer">
+    <h3 class="text-slate-500 dark:text-white font-medium text-xl"> Lorem ipsum dolor sit.</h3>
+    <div class="text-slate-300 dark:text-stone-300 mt-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus
+      placeat earum a exercitationem? Minima corrupti ad magni aut suscipit
+      nulla voluptatem atque vitae fugit at.</div>
+
+  </div>
+  <div class="relative  inline-block w-10 ml-80 mt-6 align-middle select-none transition duration-200 ease-in">
+    <input type="checkbox" name="toggle" id="toggle"
+      class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+  </div>
+  <script>
+
+    const modeDom = document.getElementById('toggle');
+    modeDom.addEventListener('change', () => {
+      if (modeDom.checked) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    })
+  </script>
+
+</body>
+
+
+
 </html>
 
 <!-- Credit for toggle button style
