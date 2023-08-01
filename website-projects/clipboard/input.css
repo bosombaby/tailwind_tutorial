@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    h3{
+        @apply text-4xl font-bold text-darkGrayishBlue md:text-5xl py-5;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 自定义类 */
+body {
+    background-image:url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-container{
+    @apply container max-w-6xl mx-auto text-center px-10;
+}
+
+.button-container{
+    @apply flex flex-col justify-center space-y-6 w-full text-xl text-white  md:flex-row  md:space-y-0 md:space-x-10;
+}
+.button-container-btn{
+    @apply p-4 px-8  rounded-xl shadow-md hover:opacity-80 transition-opacity duration-200;
+}
+
+
+
+@media(max-width:576px){
+    body{
+        background-image:url('../images/bg-header-mobile.png');
+    }
+}

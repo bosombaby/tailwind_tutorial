@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        @apply mt-10 text-2xl font-bold text-sky-500;
+    }
+
+}
+
+@layer components{
+    .btn-blue {
+        @apply px-4 py-2 m-10 font-bold text-white bg-blue-500 rounded;
+    }
+}
